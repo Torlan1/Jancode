@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="TaskCss.css">    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    </head>
+   
+    <header>
+        
+        <h1 id="title">Team Management</h1>
+        <img id="logo" src="./baw-logo.jpg">
+                
+        <nav>
+            
+            <button onclick="TableToggle()" class="activeContent">Open Items</button>
+            <button class="HideTable">Claimed</button>
+            <button class="HideTable">This Week</button>
+            <button class="HideTable">Issues/Hold</button>
+            <button class="HideTable">Closed</button>
+                   
+        </nav>
+    </header>
+    <body background="./BlueAbstract.jpg">
+                       
+            
+        
+
+            <table id="TableOpenTickets" class="animated fadeInLeft" >
+                   <thead>
+                       <tr>
+                           <th></th>
+                           
+                           <th class = "Title1">Open Tickets</th>
+                           <th>Creation Date</th>
+                           <th>Owner</th>
+                           <th>Status</th>
+                           <th>Timeline</th>
+                       </tr>
+                   </thead>
+                    <tbody>
+                    
+                        <tr >
+                        <td class="RowEdge"></td>
+                        <td contenteditable='true'>Job Creation</td>
+                        <td>1/2/19</td>
+                        
+                        <td>
+                            <select>
+                                <option></option>
+                                <option>Chris B.</option>
+                                <option>Nick M</option>
+                                <option>Jan M</option>
+                                <option>Chris K.</option>
+                                <option>John M.</option>
+                                <option>Dave L.</option>
+                            </select>
+                        </td>
+                        <td>
+                        <select>
+                            <option></option>
+                            <option class="OpenItem">Open</option>
+                            <option>Claimed/InProcess</option>
+                            <option>Hold With Issues</option>
+                            <option>Closed</option>
+                        </select>
+                        <td>1/1/19 to 1/29/19</td>
+                         </td>                   
+                    </tr>
+                    <tr >
+                            <td class="RowEdge"></td>
+                            <td contenteditable='true'>Job Creation</td>
+                            <td>1/2/19</td>
+                            
+                            <td>
+                                <select>
+                                    <option></option>
+                                    <option>Chris B.</option>
+                                    <option>Nick M</option>
+                                    <option>Jan M</option>
+                                    <option>Chris K.</option>
+                                    <option>John M.</option>
+                                    <option>Dave L.</option>
+                                </select>
+                            </td>
+                            <td>
+                            <select>
+                                <option></option>
+                                <option class="OpenItem">Open</option>
+                                <option>Claimed/InProcess</option>
+                                <option>Hold With Issues</option>
+                                <option>Closed</option>
+                            </select>
+                            <td>1/1/19 to 1/29/19</td>
+                             </td>                   
+                        </tr>
+
+                    </tbody>
+                    </table>
+                    <table id= "ThisWeekTable" >
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    
+                                    <th class = "Title2">This Week</th>
+                                    <th>Creation Date</th>
+                                    <th>Owner</th>
+                                    <th>Status</th>
+                                    <th>Timeline</th>
+                                </tr>
+                            </thead>
+                             <tbody>
+                             
+                                 <tr >
+                                 <td class="RowEdge"></td>
+                                 <td contenteditable='true'>Job Creation</td>
+                                 <td>1/2/19</td>
+                                 
+                                 <td>
+                                     <select>
+                                         <option></option>
+                                         <option>Chris B.</option>
+                                         <option>Nick M</option>
+                                         <option>Jan M</option>
+                                         <option>Chris K.</option>
+                                         <option>John M.</option>
+                                         <option>Dave L.</option>
+                                     </select>
+                                 </td>
+                                 <td>
+                                 <select>
+                                     <option></option>
+                                     <option class="OpenItem">Open</option>
+                                     <option>Claimed/InProcess</option>
+                                     <option>Hold With Issues</option>
+                                     <option>Closed</option>
+                                 </select>
+                                 <td>1/1/19 to 1/29/19</td>
+                                  </td>                   
+                             </tr>
+                             <tr >
+                                     <td class="RowEdge"></td>
+                                     <td contenteditable='true'>Job Creation</td>
+                                     <td>1/2/19</td>
+                                     
+                                     <td>
+                                         <select>
+                                             <option></option>
+                                             <option>Chris B.</option>
+                                             <option>Nick M</option>
+                                             <option>Jan M</option>
+                                             <option>Chris K.</option>
+                                             <option>John M.</option>
+                                             <option>Dave L.</option>
+                                         </select>
+                                     </td>
+                                     <td>
+                                     <select>
+                                         <option></option>
+                                         <option class="OpenItem">Open</option>
+                                         <option>Claimed/InProcess</option>
+                                         <option>Hold With Issues</option>
+                                         <option>Closed</option>
+                                     </select>
+                                     <td>1/1/19 to 1/29/19</td>
+                                    </td>                   
+                                 </tr>
+         
+                             </tbody>
+                            </table>
+       
+    </body>
+</html>
