@@ -8,8 +8,12 @@ html {
   background-repeat: no-repeat;
 }
 header{
-    height: 175px;
+    height: 125px;
+  }
+footer {
+  height: 50px;
 }
+
 #PageTitle {
   font-family: Impact, sans-serif;
   font-size: 50px;
@@ -44,6 +48,7 @@ nav {
     margin-top: 50px;
     left: 30px;
     z-index: 10;
+    margin-top: 90px;
   }
   h3 {
     float: left;
@@ -54,9 +59,9 @@ nav {
   .OpenItemCount, .ClaimedItemsCount, .ThisWeekItemCount, 
   .OnHoldItemCount, .ClosedItemCount {
     float: right;
-    width: 30px;
-    height: 30px;
-    margin-top: 25px;
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
     margin-right: -15px;
     border: thin solid;
     border-radius: 20px;
@@ -65,7 +70,7 @@ nav {
     font: bold 15px/13px Helvetica, Verdana, Tahoma;
     text-align: center;
     vertical-align: middle;
-    line-height: 30px;
+    line-height: 40px;
   }
 
 .ButtonActive , .BtnNonActive {
@@ -106,38 +111,19 @@ nav {
 /*  THIS IS THE END OF THE VERTICAL NAV */
 /*  THIS IS THE START OF THE BODYBLOCK */
 
-
-#CurrentSelect {
-   
-    border-radius: 8px;
-    width: 230px;
-    height: 90px;
-    margin-left: 130px;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 90px;
-    box-shadow: 0px 6px 5px darkgray, 0px 3px 15px rgba(0,0,5,.4);
-    background-image: url("./buttonBase.png");
-    background-size: 410px 180px;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 70px 120px 70px 120px;
-     
+#openTableCap {
+font-size: 30px;
+color: #d1b63b;
 }
 
-
-
-
 #SelectTable {
- 
-  margin-left:120px;
-  margin-top: 100px;
+  margin-left:140px;
+  margin-top: 70px;
   width: 680px;
   
 }
 #SelectTable2 {
- 
-  margin-left:120px;
+  margin-left:140px;
   margin-top: 100px;
   width: 680px;
   visibility: hidden;
@@ -147,7 +133,6 @@ nav {
 /*  THIS IS THE START OF TABLES */
 table {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  width: 100%;
   color: #f2f2f2;
   border-collapse: collapse;
   
@@ -155,19 +140,20 @@ table {
 }
 
 th {
-  padding: 8px;
+  padding: 6px;
   text-align: center;
   }
 
+TData {
+  transition: transform .2s;
+}
 
 
 tbody td {
   border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
-  
+  padding: 5px;
+  text-align: center;
   box-shadow:inset 0 0 10px #000000;
-  
 }
 
 tbody tr:nth-child(odd){
@@ -176,12 +162,14 @@ tbody tr:nth-child(odd){
 }
 
 #SelectTable tr:nth-child(even){
- 
   background-color: #006495;
 }
 
-.TData:hover {
-transition: transform .8s;
-transform: scale(1.08);
+.SelectTable .TData:hover {
+  background-color: orange;
+  transform: scale(1.10);
+  margin-top: 3px;
+  margin-bottom: 3px;
+  box-shadow: 0 8px 6px -6px black;
 }
 /*  THIS IS THE END OF THE BODYBLOCK */
